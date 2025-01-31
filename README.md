@@ -1,1 +1,1 @@
-# javascript-and-typescript-review
+# Javascript and Typescript Review
