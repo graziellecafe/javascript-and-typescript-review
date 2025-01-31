@@ -1,1 +1,3 @@
-# Javascript and Typescript Review
+# 📋 Javascript and Typescript Review
+
+## First Course: Evoluindo na Programação
