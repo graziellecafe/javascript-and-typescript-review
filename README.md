@@ -38,3 +38,57 @@ let a = 2; // está definida em um espaço de memória
 ```js
 let b = null;
 ```
+
+## 📚 Segundo Curso: Funções em Javascript
+
+### Declaração de funções: padrão e arrow function
+
+```js
+// Function declaration
+function bomDia() {
+  console.log("Bom dia!");
+}
+
+bomDia();
+
+// Function expression
+const boaTarde = function () {
+  console.log("Boa tarde!");
+};
+
+boaTarde();
+```
+
+**Função dentro de outra função**
+
+```js
+function potencia(exp) {
+  return function (base) {
+    return Math.pow(base, exp);
+  };
+}
+
+const aoQuadrado = potencia(2);
+console.log(aoQuadrado(4));
+```
+
+### Função callback
+
+```js
+function bomDia() {
+  console.log("Bom dia!");
+}
+
+Esperar quanto tempo que a primeira função, no caso a 'bomDia' seja executada:
+setTimeout(bomDia, 3000);
+```
+
+### Função setInterval
+
+Repete a chamada da função a cada x segundos de tempo determinado
+
+```js
+setInterval(function () {
+  console.log("A cada 3 segundos a função vai se repetir");
+}, 3000);
+```
