@@ -39,6 +39,105 @@ let a = 2; // está definida em um espaço de memória
 let b = null;
 ```
 
+### Array
+
+É uma estrutura indexada, começando com 0. Você pode colocar qualquer coisa dentro do array, mas normalmente colocamos o mesmo tipo de valores. Ex: Notas dos alunos.
+
+Podemos adicionar novos elementos, acrescentar valores ou seja, é uma estrutura dinâmica.
+
+--> Heterogênea e dinâmica
+
+📓 **Laço for para percorrer o array**
+
+```js
+const arrayNumeros = [68, 55, 123, 222, 95, 33, 45];
+
+// Imprimir os valores dos índices
+for (let i = 0; i <= arrayNumeros.length; i++) {
+  console.log(i);
+}
+
+// Imprimir o conteúdo do array
+for (let i = 0; i < arrayNumeros.length; i++) {
+  console.log(`No índice ${i} temos o valor de ${arrayNumeros[i]}`);
+}
+
+// foreach => para cada elemento do array
+for (let numero of arrayNumeros) {
+  console.log(arrayNumeros);
+}
+
+// for para cada indice
+for (let indice in arrayNumeros) {
+  console.log(`${indice} => ${arrayNumeros[indice]}`);
+}
+```
+
+📓 **Funções e métodos utilizados em arrays**
+
+1. **length**:
+
+```js
+console.log(numeros.length);
+```
+
+2. **join**: Junta os índices de array
+
+```js
+const numeros = [];
+console.log(numeros.join(""));
+```
+
+3. **includes**: Verifica se o que está sendo passado no método está no array
+
+```js
+const nomeIncludes = nomeArray.includes("G"); // true para 'Grazielle'
+console.log(nomeIncludes);
+```
+
+4. **indexOf** Verifica o conteúdo que está no index passado
+
+```js
+console.log(
+  ` O conteúdo dentro da letra a está na posição de índice: ${nome.indexOf(
+    "a" // 2
+  )}`
+```
+
+4. **concat**: Cria um novo array, diferente do push, com novos elementos adicionados
+
+```js
+const numeros = [1, 2, 3];
+const numeros2 = numeros.concat(4, 5, 6);
+console.log(`Os novos números são: ${numeros2}`);
+```
+
+4. **splice**: A função do splice() permite adicionar, remover ou substituir elementos de um array. Ele modifica o array original e retorna os elementos removidos como um novo array.
+
+```js
+const numerosOriginais = [1, 2, 3, 4, 5, 6];
+const numerosSlice = numerosOriginais.splice(3, 1);
+console.log(
+  `O novo número eliminando o elemento da terceira posição e o próximo é: ${numerosSlice}`
+);
+```
+
+📓 **Desafio forEach()**
+
+```js
+const nomes = ["Rafaela", "Larissa", "Ana", "Pedro", "Gustavo"];
+
+function forEach(array, funcao) {
+  for (let i in array) {
+    funcao(array[i], i, array);
+  }
+}
+
+function paraCadaElemento(elemento, i, array) {
+  console.log(elemento, i, array);
+}
+```
+
 ## 📚 Segundo Curso: Funções em Javascript
 
 ### Declaração de funções: padrão e arrow function
