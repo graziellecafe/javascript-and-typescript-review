@@ -2,7 +2,7 @@
 
 ## 📚 Primeiro Curso: Evoluindo na Programação
 
-### Introdução
+### 🎯 1. Função
 
 📓 **Programando sem o uso de função:**
 
@@ -39,7 +39,7 @@ let a = 2; // está definida em um espaço de memória
 let b = null;
 ```
 
-### Array
+### 2. 🎯 Array
 
 É uma estrutura indexada, começando com 0. Você pode colocar qualquer coisa dentro do array, mas normalmente colocamos o mesmo tipo de valores. Ex: Notas dos alunos.
 
@@ -138,6 +138,35 @@ function paraCadaElemento(elemento, i, array) {
 }
 ```
 
+### 3. 🎯 Objetos
+
+Array: []
+Objeto: {}
+
+Exemplo de objeto: par chave valor:
+
+```js
+cliente {
+  nome: "Leonardo Leitão",
+  idade: 30,
+  endereco: "Rua Avenida Paulista, 256"
+}
+```
+
+Para acessar fazemos:
+
+```js
+console.log(cliente.nome);
+console.log(cliente["nome"]);
+```
+
+Para alterar o parâmetro:
+
+```js
+cliente['nome'] = 'Caneta Bic Vermelha';
+cliente.nome = 'Caneta Bic Vermelha;
+```
+
 ## 📚 Segundo Curso: Funções em Javascript
 
 ### Declaração de funções: padrão e arrow function
@@ -191,3 +220,11 @@ setInterval(function () {
   console.log("A cada 3 segundos a função vai se repetir");
 }, 3000);
 ```
+
+## 📚 Terceiro Curso: Node
+
+**Node**: Runtime do Javascript
+
+**Executar o Javascript em toda parte**: O Node.js é um ambiente de execução disponível para várias plataformas, de código aberto e gratuita, que permite os programadores criar servidores, aplicações da Web, ferramentas de linha de comando e programas de automação de tarefas.
+
+## 📚 Quarto Curso: Javascript Funcional e Reativo: Pense como um Desenvolvedor Javascript
